@@ -2,9 +2,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-# Simple line plot
-x = [1, 3, 5, 7, 9]
-y = [2, 4, 6, 8, 10]
+# Simple line plot of temperature versus the days in a week
+days = [1, 2, 3, 4, 5, 6, 7]
+temperature = [72, 75, 68, 70, 74, 77, 71]
 
-plt.plot([1, 3, 5, 7, 9], [2, 4, 6, 8, 10])
+plt.plot(days, temperature)
 plt.show()

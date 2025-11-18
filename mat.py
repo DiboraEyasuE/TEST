@@ -1,13 +1,10 @@
-import matplotlib as plt
+import matplotlib.pyplot as plt
 import numpy as np
 
 
 # Simple line plot
-x = [1, 2, 3, 4, 5]
+x = [1, 3, 5, 7, 9]
 y = [2, 4, 6, 8, 10]
 
-plt.plot(x, y)
-plt.title("Simple Line Plot")
-plt.xlabel("X Axis")
-plt.ylabel("Y Axis")
+plt.plot([1, 3, 5, 7, 9], [2, 4, 6, 8, 10])
 plt.show()

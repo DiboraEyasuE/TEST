@@ -67,7 +67,14 @@ plt.xlabel("Number of students", fontsize=15, color='brown')
 plt.ylabel("Exam scores", fontsize=15, color='brown')
 plt.show()
 
+# Pie charts
 
+time_spent = [3, 7, 10, 5, 12]
+skills = ['pandas', 'matplotlib', 'OOP', 'numpy', 'Other']
+
+plt.pie(time_spent, labels=skills, colors=['k', 'c', 'm', 'grey', 'w'])
+plt.title("Time Spent for Skills")
+plt.show()
 
 
 

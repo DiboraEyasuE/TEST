@@ -43,8 +43,12 @@ plt.show()
 subjects = ['Programming II', 'Algebra', 'Calculus', 'Statistics']
 stars = [15, 30, 25, 20]
 
-plt.bar(subjects, stars, color='k', width=0.4)
-plt.title("Sujects and their Stars", fontsize=18, color='m')
+# plt.bar(fruits, quantities, hatch='/')   diagonal lines
+# plt.bar(fruits, quantities, hatch='\\')   backslash lines
+# plt.bar(fruits, quantities, hatch='x')    cross pattern
+
+plt.bar(subjects, stars, color=['brown', 'gray', 'k', 'c'], width=0.4)
+plt.title("Subjects and their Stars", fontsize=18, color='m')
 plt.xlabel("Starred Subjects", fontsize=15, color='m')
 plt.ylabel("Number of stars from students", fontsize=15, color='m')
 plt.show()
@@ -53,6 +57,17 @@ plt.show()
 
 # plt.barh(subjects, stars, color='k') 
 # The h at the end of the word bar makes it horizontal
+
+# Creating Histograms
+
+Scores = [65, 72, 78, 85, 88, 92, 95, 72, 78, 85, 88, 92, 65, 72, 78, 85, 88, 92, 95, 100]
+plt.hist(Scores, bins=5, color='c')
+plt.title("Score Distribution", fontsize=18, color='brown')
+plt.xlabel("Number of students", fontsize=15, color='brown')
+plt.ylabel("Exam scores", fontsize=15, color='brown')
+plt.show()
+
+
 
 
 

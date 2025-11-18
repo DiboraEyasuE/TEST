@@ -26,11 +26,33 @@ plt.ylabel("Temperature(F)", fontsize=12, color='b')
 
 plt.show()
 
+# Scattered plots
+
 std = [1, 2, 3, 4, 5, 6, 7, 8]
 score = [85, 92, 78, 65, 95, 88, 72, 90]
 # to see only the scattered plot with markers, use this without the previous code
-plt.scatter(std, score, color='k', marker="k")
+plt.scatter(std, score, color='k', marker="*")
 plt.title("Student Scores")
 plt.xlabel("Student id")
 plt.ylabel("Scores")
 plt.show()
+
+# Bar graphs
+
+# vertical bar graphs
+subjects = ['Programming II', 'Algebra', 'Calculus', 'Statistics']
+stars = [15, 30, 25, 20]
+
+plt.bar(subjects, stars, color='k', width=0.4)
+plt.title("Sujects and their Stars", fontsize=18, color='m')
+plt.xlabel("Starred Subjects", fontsize=15, color='m')
+plt.ylabel("Number of stars from students", fontsize=15, color='m')
+plt.show()
+
+# vertical bar graphs
+
+# plt.barh(subjects, stars, color='k') 
+# The h at the end of the word bar makes it horizontal
+
+
+
